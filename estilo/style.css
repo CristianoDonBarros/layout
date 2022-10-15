@@ -1,0 +1,130 @@
+@charset "utf-8"; 
+
+:root {
+    --cor0: #ac9c10;
+    --cor1: #1aa1d6;
+    --cor2: #1edbfc;
+    --cor3: #15b08e;
+    --cor4: #159494;
+    --cor5: #1eadf0;
+
+}
+
+* { padding: 0px; margin: 0px; }
+
+div {
+    box-shadow: 0px 0px 5px black;
+}
+ 
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'h h h h h h'
+    'n n n n n n'
+    'm m m m m m'
+    'a a a a a a'
+    'f f f f f f';
+}
+
+header {
+    grid-area: h;
+    background-color: var(--cor1);
+    height: 20vh;
+    width: 100vw;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div {
+    background-color: var(--cor0);
+    height: 70%;
+    width: 20%;
+    margin: 5px 20px;
+}
+.a {
+    max-width: 20vw;
+}
+
+.b {
+    width: 60vw;
+    margin: auto;
+}
+
+nav {
+    grid-area: n;
+    background-color: var(--cor2);
+    height: 5vh;
+    width: 90vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > div {
+    background-color: var(--cor0);
+    height: 70%;
+    width: 20%;
+    margin: 5px;
+}
+
+main {
+    grid-area: m;
+    background-color: var(--cor3);
+    height: 35vh;
+    width: 90vw;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main > div {
+    background-color: var(--cor0);
+    height: 70%;
+    width: 20%;
+    margin: 5px;
+}
+
+aside {
+    grid-area: a;
+    background-color: var(--cor4);
+    height: 35vh;
+    width: 90vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+aside > div {
+    background-color: var(--cor0);
+    height: 70%;
+    width: 40%;
+    margin: 5px;
+}
+
+footer {
+    grid-area: f;
+    background-color: var(--cor5);
+    height: 5vh;
+    width: 100vw;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+footer > div {
+    background-color: var(--cor0);
+    height: 70%;
+    width: 40%;   
+    margin: 5px;
+}

@@ -1,0 +1,100 @@
+/*----------Midia para tablets------------*/
+@media  screen and (min-width: 700px) and (max-width: 900px) {
+
+    body {
+        grid-template-areas: 
+        'h h h h h h'
+        'm m m a a n'
+        'm m m a a n'
+        'm m m a a n'
+        'f f f f f f';
+    }
+
+    nav {
+        height: 75vh;
+        width: 14vw;
+        flex-direction: column;
+    }
+
+    nav > div {
+        height: 10%;
+        width: 70%;
+    }
+
+    main {
+        height: 75vh;
+        width: 43vw;
+        flex-direction: column;
+    } 
+
+    main > div {
+        height: 40%;
+        width: 40%;
+    }
+
+    aside {
+        height: 75vh;
+        width: 43vw;
+        flex-direction: column;
+    }
+    aside > div {
+        height: 40%;
+        width: 80%;
+    }
+
+    footer {
+        height: 5vh;
+    }
+
+}
+
+
+/*----------- Midia para desktop------------*/
+@media screen and (min-width: 900px) {
+    
+    body {
+        grid-template-areas: 
+        'h h h h h h h'
+        'n n a a m m m'
+        'n n a a m m m'
+        'n n a a m m m'
+        'f f f f f f f';
+    }
+
+    nav {
+        height: 75vh;
+        width: 14vw;
+        flex-direction: column;
+    }
+
+    nav > div {
+        height: 10%;
+        width: 70%;
+    }
+
+    main {
+        height: 75vh;
+        width: 43vw;
+        flex-direction: column;
+    } 
+
+    main > div {
+        height: 40%;
+        width: 30%;
+    }
+
+    aside {
+        height: 75vh;
+        width: 43vw;
+        flex-direction: column;
+    }
+
+    aside > div {
+        height: 40%;
+        width: 70%;
+    }
+
+    footer {
+        height: 5vh;
+    }
+}
